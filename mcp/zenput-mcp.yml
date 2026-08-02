@@ -1,0 +1,72 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://developer.zenput.com/reference
+server:
+  name: zenput
+  transport: http
+  url: null
+notes: >-
+  No official hosted/remote MCP server is published by Zenput. This is a
+  CANDIDATE tool surface derived from the operations listed in the provider's
+  published API Reference index (developer.zenput.com/llms.txt). Each tool maps
+  to a documented operation; request/response schemas are not fully published,
+  so parameters are omitted rather than invented.
+tools:
+- name: list_submissions
+  description: List activity/form submissions by form template ID or activity ID.
+  source_operation: https://developer.zenput.com/reference/get-activity-submissions-ref
+- name: list_submissions_large_batch
+  description: Start a large-batch submission export (2,500 records per page, token-paged).
+  source_operation: https://developer.zenput.com/reference/retrieve-submissions-large-batch
+- name: list_submissions_large_batch_next
+  description: Fetch the next page of a large-batch submission export using a continuation token.
+  source_operation: https://developer.zenput.com/reference/list-submissions-large-batch-get-next-page
+- name: list_locations
+  description: List all locations for the company.
+  source_operation: https://developer.zenput.com/reference/get-locations-v3-ref
+- name: retrieve_location
+  description: Retrieve a location by ID.
+  source_operation: https://developer.zenput.com/reference/get-location-ref
+- name: create_location
+  description: Create a location.
+  source_operation: https://developer.zenput.com/reference/create-location-ref
+- name: update_location_properties
+  description: Update one or more properties of a location.
+  source_operation: https://developer.zenput.com/reference/update-location-props-ref
+- name: update_location
+  description: Replace all properties of a location.
+  source_operation: https://developer.zenput.com/reference/update-location-ref
+- name: reactivate_user
+  description: Reactivate a user by ID.
+  source_operation: https://developer.zenput.com/reference/reactivate-user
+- name: import_fbc_assignments
+  description: Import Field Business Consultant assignments in bulk.
+  source_operation: https://developer.zenput.com/reference/bulk-fbc-assignment
+- name: bulk_assign_fbcs
+  description: Add, remove, or replace FBC assignments.
+  source_operation: https://developer.zenput.com/reference/bulk-assign-fbcs
+- name: retrieve_company_calendar_event_types
+  description: Retrieve all calendar event types available in the company.
+  source_operation: https://developer.zenput.com/reference/retrieve-companys-calendar-events
+- name: retrieve_location_calendar_events
+  description: Retrieve calendar events for a specific location.
+  source_operation: https://developer.zenput.com/reference/retrive-locations-calendar-events
+- name: update_location_calendar_events
+  description: Update operating hours for a specific location.
+  source_operation: https://developer.zenput.com/reference/update-locations-calendar-events
+- name: retrieve_company_general_attributes
+  description: Retrieve the company's general attributes.
+  source_operation: https://developer.zenput.com/reference/retrieve-companys-general-attributes
+- name: retrieve_general_attribute
+  description: Retrieve a specific general attribute.
+  source_operation: https://developer.zenput.com/reference/retrieve-a-specific-general-attribute
+- name: rename_general_attribute
+  description: Rename a specific general attribute.
+  source_operation: https://developer.zenput.com/reference/rename-a-specific-general-attribute
+- name: delete_general_attribute
+  description: Delete a general attribute (also removes it from all locations).
+  source_operation: https://developer.zenput.com/reference/delete-a-specific-general-attribute
+- name: bulk_assign_general_attributes
+  description: Manage general-attribute assignments to locations in bulk.
+  source_operation: https://developer.zenput.com/reference/bulk-assign-general-attributes

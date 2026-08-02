@@ -1,8 +1,31 @@
 aid: zenput
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zenput.png
 name: Zenput
-description: Zenput is a company surfaced as a portfolio company of version-one-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Zenput (now Crunchtime Ops Execution) is an operations-execution platform for
+  multi-unit restaurant and convenience-store operators, used across 60,000+
+  locations in 100+ countries to run task management, audits and food-safety
+  compliance, temperature monitoring, food-prep labeling, and store-level
+  operational workflows. Zenput exposes a RESTful HTTP API (documented at
+  developer.zenput.com) for submissions/form data, locations, users and roles,
+  teams, tasks, sensors, calendar events / operating hours, general attributes,
+  and field-business-consultant (FBC) assignments. The API authenticates with a
+  per-user X-API-TOKEN header, is versioned in the URL path (v1 and v3), and
+  provides a large-batch submissions retrieval flow with token-based paging plus
+  a staging environment for testing. Zenput was acquired by Crunchtime in 2022
+  and continues to operate its developer platform under the Zenput brand.
 url: https://raw.githubusercontent.com/api-evangelist/zenput/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +35,83 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1
 tags:
 - Company
-apis: []
+- Restaurant Operations
+- Operations Execution
+- Food Safety
+- Compliance
+- Task Management
+- Convenience Stores
+- Field Operations
+- Restaurant Technology
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Zenput API
+  description: >-
+    RESTful HTTP API for the Zenput operations-execution platform — retrieve
+    activity/form submissions (including large-batch paged retrieval), manage
+    locations, users, user roles, teams, tasks, sensors, calendar events /
+    operating hours, general attributes, and FBC assignments. Authenticated with
+    an X-API-TOKEN header and versioned in the URL path (v1/v3).
+  humanURL: https://developer.zenput.com
+  baseURL: https://www.zenput.com/api/v1/
+  tags:
+  - Operations Execution
+  - Submissions
+  - Locations
+  - Restaurant Operations
+  properties:
+  - type: Documentation
+    url: https://developer.zenput.com/docs/introduction
+  - type: APIReference
+    url: https://developer.zenput.com/reference
+  - type: GettingStarted
+    url: https://developer.zenput.com/docs/introduction
+  - type: Authentication
+    url: authentication/zenput-authentication.yml
+  - type: LLMsTxt
+    url: llms/zenput-llms.txt
+common:
+- type: DomainSecurity
+  url: security/zenput-domain-security.yml
+- type: DeveloperPortal
+  url: https://developer.zenput.com
+- type: Website
+  url: https://www.zenput.com
+- type: Documentation
+  url: https://developer.zenput.com/docs/introduction
+- type: APIReference
+  url: https://developer.zenput.com/reference
+- type: GettingStarted
+  url: https://developer.zenput.com/docs/introduction
+- type: Support
+  url: https://help.crunchtime.com
+- type: GitHubOrganization
+  url: https://github.com/zenput
+- type: Authentication
+  url: authentication/zenput-authentication.yml
+- type: LLMsTxt
+  url: llms/zenput-llms.txt
+- type: WellKnown
+  url: well-known/zenput-well-known.yml
+- type: Conventions
+  url: conventions/zenput-conventions.yml
+- type: Lifecycle
+  url: lifecycle/zenput-lifecycle.yml
+- type: ChangeLog
+  url: changelog/zenput-changelog.yml
+- type: Sandbox
+  url: sandbox/zenput-sandbox.yml
+- type: MCPServer
+  url: mcp/zenput-mcp.yml

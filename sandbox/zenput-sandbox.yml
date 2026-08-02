@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.zenput.com/docs/introduction
+test_live_separation:
+  model: separate-environment
+  detail: >-
+    Zenput publishes a dedicated staging environment distinct from production.
+    The same X-API-TOKEN header authentication applies; tokens are issued
+    per-user per environment.
+environments:
+- name: production
+  base_url: https://www.zenput.com/api/v1/
+- name: staging
+  base_url: https://staging.zenput.com/api/v1/
+test_values: []
+notes: >-
+  A staging base URL is documented for testing integrations before pointing at
+  production. No magic/test identifiers, test cards, or fixture-trigger tooling
+  are published (Zenput is an operations-execution platform, not a payments
+  API), so none are recorded — absence is expected and valid.

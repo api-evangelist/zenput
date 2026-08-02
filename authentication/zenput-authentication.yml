@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.zenput.com/docs/introduction
+docs: https://developer.zenput.com/docs/introduction
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: apiToken
+  type: apiKey
+  in: header
+  parameter_name: X-API-TOKEN
+  description: >-
+    Per-user API token passed in the X-API-TOKEN request header on every call.
+    A user generates the token from their account settings at
+    https://www.zenput.com/settings. There is no OAuth flow documented; the
+    token is a static per-user secret scoped to that user's company access.
+  sources:
+  - https://developer.zenput.com/docs/introduction
+notes: >-
+  Token-based header authentication only. No documented OAuth2, OpenID Connect,
+  HTTP Basic/Bearer, or mutualTLS scheme, so no scopes/ artifact is emitted
+  (key-auth providers have no OAuth scope surface).

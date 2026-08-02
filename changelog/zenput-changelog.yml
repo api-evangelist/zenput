@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.zenput.com/llms.txt
+docs: https://developer.zenput.com
+scheme: dated-data-dictionary
+detail: >-
+  Zenput publishes versioned Data Dictionary editions each with a matching
+  dated Change Log in the developer portal, rather than a single semver
+  changelog. The recent window captured from the published documentation index.
+current: '2026-07-16'
+entries:
+- version: '2026-07-16'
+  date: '2026-07-16'
+  url: https://developer.zenput.com/docs/dd-2026-07-16-0d7805-1
+  data_dictionary: https://developer.zenput.com/docs/dd-2026-07-16-0d7805
+  highlights: Data Dictionary 2026-07-16 edition with corresponding change log.
+- version: '2026-06-24'
+  date: '2026-06-24'
+  url: https://developer.zenput.com/docs/dd-2026-06-24-18e671-1
+  data_dictionary: https://developer.zenput.com/docs/dd-2026-06-24-18e671
+  highlights: Data Dictionary 2026-06-24 edition with corresponding change log.
+- version: '2026-06-03'
+  date: '2026-06-03'
+  url: https://developer.zenput.com/docs/dd-2026-06-03-1c3c20-1
+  data_dictionary: https://developer.zenput.com/docs/dd-2026-06-03-1c3c20
+  highlights: Data Dictionary 2026-06-03 edition with corresponding change log.
+- version: '2026-01-16'
+  date: '2026-01-16'
+  data_dictionary: https://developer.zenput.com/docs/dd-2026-01-16-bd0aed-4
+  highlights: Data Dictionary 2026-01-16 edition.
+notes: >-
+  Entry URLs are the real dated Change Log / Data Dictionary pages listed in the
+  provider's published llms.txt index. Body contents were not fetched verbatim
+  (developer portal pages are behind a bot-challenge); dates and URLs are
+  authoritative from the index.

@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/* on Zenput hosts
+hosts:
+- host: https://www.zenput.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://developer.zenput.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+notes: >-
+  No /.well-known/ discovery documents are published on either the marketing
+  host (www.zenput.com) or the ReadMe-hosted developer portal
+  (developer.zenput.com). An llms.txt IS published at
+  https://developer.zenput.com/llms.txt (captured in llms/zenput-llms.txt).

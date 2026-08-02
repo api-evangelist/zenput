@@ -1,0 +1,112 @@
+# Zenput Documentation
+
+> Documentation for Zenput
+
+## Guides
+- [Getting Started](https://developer.zenput.com/docs/introduction.md): Operations Execution (Zenput)
+- [IP and DNS Addresses](https://developer.zenput.com/docs/ip-dns-addresses.md): Operations Execution (Zenput)
+- [Location Attributes](https://developer.zenput.com/docs/location-attributes.md): Ways to manage your **Location Attributes**
+- [Tutorials](https://developer.zenput.com/docs/tutorials.md): Operations Execution (Zenput)
+- [About Us](https://developer.zenput.com/docs/about-us.md)
+- [Data Dictionary: 2026-01-16](https://developer.zenput.com/docs/dd-2026-01-16-bd0aed-4.md)
+- [Data Dictionary: 2026-06-03](https://developer.zenput.com/docs/dd-2026-06-03-1c3c20.md)
+- [Change Log: 2026-06-03](https://developer.zenput.com/docs/dd-2026-06-03-1c3c20-1.md)
+- [Data Dictionary: 2026-06-24](https://developer.zenput.com/docs/dd-2026-06-24-18e671.md)
+- [Change Log: 2026-06-24](https://developer.zenput.com/docs/dd-2026-06-24-18e671-1.md)
+- [Data Dictionary: 2026-07-16](https://developer.zenput.com/docs/dd-2026-07-16-0d7805.md)
+- [Change Log: 2026-07-16](https://developer.zenput.com/docs/dd-2026-07-16-0d7805-1.md)
+
+## API Reference
+- [List Submissions](https://developer.zenput.com/reference/get-activity-submissions-ref.md): Get the **properties** of **submissions** by providing an existing **form template ID** or an existing **activity ID**.
+- [List Submissions (Large Batch)](https://developer.zenput.com/reference/retrieve-submissions-large-batch.md): Used to fetch large batches of data beyond the 10,000 record limit. 2500 records at a time. Returns a token that can be sent via a GET request to <a href="/reference/list-submissions-large-batch-get-next-page" target="_blank">/api/v3/submissions/batch</a>
+- [List Submissions (Large Batch), Get Next Page](https://developer.zenput.com/reference/list-submissions-large-batch-get-next-page.md): Used to fetch large batches of data beyond the 10,000 record limit. 2500 records at a time. Start with sending a POST to the <a href="/reference/retrieve-submissions-large-batch" target="_blank">batch API</a>. If you get a token back on the response, you can send that to get the next page of results
+- [Reactivate User](https://developer.zenput.com/reference/reactivate-user.md): Reactivate a **user** by providing an existing **user ID**.
+- [List Locations](https://developer.zenput.com/reference/get-locations-v3-ref.md): Get the **properties** of all existing **locations** corresponding to your company.
+- [Retrieve Location](https://developer.zenput.com/reference/get-location-ref.md): Get the **properties** of a **location** by providing an existing **location ID**.
+- [Create Location](https://developer.zenput.com/reference/create-location-ref.md): Create a **location**.
+- [Update Location Properties](https://developer.zenput.com/reference/update-location-props-ref.md): Update one or more **properties** of a **location** by providing an existing **location ID** and a new value for each **property**.
+- [Update Location](https://developer.zenput.com/reference/update-location-ref.md): Update all the **properties** of a **location** by providing an existing **location ID** and new values for the **properties**.
+- [Import FBC Assignments](https://developer.zenput.com/reference/bulk-fbc-assignment.md): Import FBC assignments using an array of objects with the company name, location name, and email values.
+- [Bulk assign FBCs](https://developer.zenput.com/reference/bulk-assign-fbcs.md): Add, remove, or replace FBC assignments.
+- [Calendar Events](https://developer.zenput.com/reference/calendar-events.md): A calendar event type is something like "Opening Hours" or "Closing Hours".
+- [Retrieve Company's Calendar Event Types](https://developer.zenput.com/reference/retrieve-companys-calendar-events.md): Allows to retrieve all calendar event types that are available in the company.
+- [Retrieve Location's Calendar Events](https://developer.zenput.com/reference/retrive-locations-calendar-events.md): Allows to retrieve all calendar events that are associated with a specific location
+- [Update Location's Calendar Events](https://developer.zenput.com/reference/update-locations-calendar-events.md): Allows to update operating hours for a specific location
+- [Retrieve Company's General Attributes](https://developer.zenput.com/reference/retrieve-companys-general-attributes.md)
+- [Retrieve a specific General Attribute](https://developer.zenput.com/reference/retrieve-a-specific-general-attribute.md)
+- [Rename a specific General Attribute](https://developer.zenput.com/reference/rename-a-specific-general-attribute.md)
+- [Delete a specific General Attribute](https://developer.zenput.com/reference/delete-a-specific-general-attribute.md): Deleting a General Attribute also removes it from all Locations
+- [Bulk Assign General Attributes](https://developer.zenput.com/reference/bulk-assign-general-attributes.md): Enables management of General Attribute assignments to locations
+
+## Recipes
+- [Activities | GET Submissions Request](https://developer.zenput.com/recipes/activities-get-submissions-request.md)
+- [Activities | GET Submissions Response](https://developer.zenput.com/recipes/activities-get-submissions-response.md)
+- [Manage General Attributes | Response](https://developer.zenput.com/recipes/bulk-assign-attributes-response.md)
+- [Forms | GET Form Submission Request](https://developer.zenput.com/recipes/forms-get-form-submission-request.md)
+- [Forms | GET Form Submission Response](https://developer.zenput.com/recipes/forms-get-form-submission-response.md)
+- [Forms | GET Form Submissions Request](https://developer.zenput.com/recipes/forms-get-form-submissions-request.md)
+- [Forms | GET Form Submissions Response](https://developer.zenput.com/recipes/forms-get-form-submissions-response.md)
+- [Forms | GET Form Template Request](https://developer.zenput.com/recipes/forms-get-form-template-request.md)
+- [Forms | GET Form Template Response](https://developer.zenput.com/recipes/forms-get-form-template-response.md)
+- [Forms | GET Form Templates Request](https://developer.zenput.com/recipes/forms-get-form-templates-request.md)
+- [Forms | GET Form Templates Response](https://developer.zenput.com/recipes/forms-get-form-templates-response.md)
+- [Locations | Get and update calendar events for location](https://developer.zenput.com/recipes/get-and-calendar-events-for-location.md)
+- [Locations | DELETE Location Request](https://developer.zenput.com/recipes/locations-delete-location-request-1.md)
+- [Locations | GET Location Request](https://developer.zenput.com/recipes/locations-get-location-request.md)
+- [Locations | GET Location Response](https://developer.zenput.com/recipes/locations-get-location-response.md)
+- [Locations | GET Locations Request](https://developer.zenput.com/recipes/locations-get-locations-request.md)
+- [Locations | GET Locations Response](https://developer.zenput.com/recipes/locations-get-locations-response.md)
+- [Locations | Patch FBC Bulk Assignment Request](https://developer.zenput.com/recipes/locations-patch-fbc-bulk-assignment-request.md)
+- [Locations | Patch FBC Bulk Assignment Response](https://developer.zenput.com/recipes/locations-patch-fbc-bulk-assignment-response.md)
+- [Locations | PATCH Location Request](https://developer.zenput.com/recipes/locations-patch-location-request.md)
+- [Locations | PATCH Location Response](https://developer.zenput.com/recipes/locations-patch-location-response.md)
+- [Locations | PATCH Locations Response](https://developer.zenput.com/recipes/locations-patch-locations-response.md)
+- [Locations | POST FBC Import Request](https://developer.zenput.com/recipes/locations-post-fbc-import-request.md)
+- [Locations | POST FBC Import Response](https://developer.zenput.com/recipes/locations-post-fbc-import-response.md)
+- [Locations | POST Location Request](https://developer.zenput.com/recipes/locations-post-location-request.md)
+- [Locations | POST Location Response](https://developer.zenput.com/recipes/locations-post-location-response.md)
+- [Locations | PUT Location Request](https://developer.zenput.com/recipes/locations-put-location-request.md)
+- [Manage General Attributes | Request](https://developer.zenput.com/recipes/manage-general-attributes.md)
+- [Locations | Add a new calendar event to a location](https://developer.zenput.com/recipes/recipe-title.md)
+- [Sensors | GET Sensors by Location Request](https://developer.zenput.com/recipes/sensors-get-sensors-by-location-request.md)
+- [Sensors | GET Sensors Request](https://developer.zenput.com/recipes/sensors-get-sensors-request.md)
+- [Sensors | GET Sensors Response](https://developer.zenput.com/recipes/sensors-get-sensors-response.md)
+- [Tasks | GET Task Request](https://developer.zenput.com/recipes/tasks-get-task-request.md)
+- [Tasks | GET Task Response](https://developer.zenput.com/recipes/tasks-get-task-response.md)
+- [Tasks | GET Tasks Request](https://developer.zenput.com/recipes/tasks-get-tasks-request.md)
+- [Tasks | GET Tasks Response](https://developer.zenput.com/recipes/tasks-get-tasks-response.md)
+- [Tasks | POST Task Request](https://developer.zenput.com/recipes/tasks-post-task-request.md)
+- [Tasks | POST Task Response](https://developer.zenput.com/recipes/tasks-post-task-response.md)
+- [Tasks | PUT Task Request](https://developer.zenput.com/recipes/tasks-put-task-request.md)
+- [Tasks | PUT Task Response](https://developer.zenput.com/recipes/tasks-put-task-response.md)
+- [Teams | DELETE Team Request](https://developer.zenput.com/recipes/teams-delete-team-request.md)
+- [Teams | GET Team Request](https://developer.zenput.com/recipes/teams-get-team-request.md)
+- [Teams | GET Team Response](https://developer.zenput.com/recipes/teams-get-team-response.md)
+- [Teams | GET Teams Request](https://developer.zenput.com/recipes/teams-get-teams-request.md)
+- [Teams | GET Teams Response](https://developer.zenput.com/recipes/teams-get-teams-response.md)
+- [Teams | PATCH Team Request](https://developer.zenput.com/recipes/teams-patch-team-request.md)
+- [Teams | POST Team Request](https://developer.zenput.com/recipes/teams-post-team-request.md)
+- [Teams | POST Team Response](https://developer.zenput.com/recipes/teams-post-team-response.md)
+- [Teams | PUT Team Request](https://developer.zenput.com/recipes/teams-put-team-request.md)
+- [User Roles | DELETE User Role Request](https://developer.zenput.com/recipes/user-roles-delete-user-role-request.md)
+- [User Roles | GET User Role Request](https://developer.zenput.com/recipes/user-roles-get-user-role-request.md)
+- [User Roles | GET User Role Response](https://developer.zenput.com/recipes/user-roles-get-user-role-response.md)
+- [User Roles | GET User Roles Request](https://developer.zenput.com/recipes/user-roles-get-user-roles-request.md)
+- [User Roles | GET User Roles Response](https://developer.zenput.com/recipes/user-roles-get-user-roles-response.md)
+- [User Roles | PATCH User Role Request](https://developer.zenput.com/recipes/user-roles-patch-user-role-request.md)
+- [User Roles | POST User Role Request](https://developer.zenput.com/recipes/user-roles-post-user-role-request.md)
+- [User Roles | POST User Role Response](https://developer.zenput.com/recipes/user-roles-post-user-role-response.md)
+- [User Roles | PUT User Role Request](https://developer.zenput.com/recipes/user-roles-put-user-role-request.md)
+- [Users | DELETE User Request](https://developer.zenput.com/recipes/users-delete-user-request.md)
+- [Users | GET User Request](https://developer.zenput.com/recipes/users-get-user-request.md)
+- [Users | GET User Response](https://developer.zenput.com/recipes/users-get-user-response.md)
+- [Users | GET Users Request](https://developer.zenput.com/recipes/users-get-users-request.md)
+- [Users | GET Users Response](https://developer.zenput.com/recipes/users-get-users-response.md)
+- [Users | PATCH User Request](https://developer.zenput.com/recipes/users-patch-user-request.md)
+- [Users | POST User Request](https://developer.zenput.com/recipes/users-post-user-request.md)
+- [Users | POST User Response](https://developer.zenput.com/recipes/users-post-user-response.md)
+- [Users | PUT User Request](https://developer.zenput.com/recipes/users-put-user-request.md)
+- [Users | Reactivate User Request](https://developer.zenput.com/recipes/users-reactivate-user-request.md)
+
+## Pages
+- [Solutions](https://developer.zenput.com/solutions.md)

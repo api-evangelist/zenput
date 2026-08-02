@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.zenput.com
+versioning:
+  scheme: uri-path
+  current: v3
+  versions:
+  - v1
+  - v3
+  docs: https://developer.zenput.com/reference
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  detail: >-
+    No public deprecation policy or RFC 8594 Sunset/Deprecation header support
+    is documented. v1 and v3 endpoints are offered concurrently.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+data_dictionary:
+  detail: >-
+    Zenput versions its data model as dated Data Dictionary releases with
+    matching Change Logs (see changelog/zenput-changelog.yml); the developer
+    portal exposes 2026-01-16, 2026-06-03, 2026-06-24, and 2026-07-16 editions.
+  ref: changelog/zenput-changelog.yml
+deprecated_operations: []
+notes: >-
+  No provider-operated public status page (the developer portal embeds ReadMe's
+  own platform status, not a Zenput status page) and no formal deprecation
+  policy were found, so no StatusPage or Deprecation pointers are emitted.
