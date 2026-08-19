@@ -6,12 +6,10 @@ server:
   name: zenput
   transport: http
   url: null
-notes: >-
-  No official hosted/remote MCP server is published by Zenput. This is a
-  CANDIDATE tool surface derived from the operations listed in the provider's
-  published API Reference index (developer.zenput.com/llms.txt). Each tool maps
-  to a documented operation; request/response schemas are not fully published,
-  so parameters are omitted rather than invented.
+notes: No official hosted/remote MCP server is published by Zenput. This is a CANDIDATE tool surface derived
+  from the operations listed in the provider's published API Reference index (developer.zenput.com/llms.txt).
+  Each tool maps to a documented operation; request/response schemas are not fully published, so parameters
+  are omitted rather than invented.
 tools:
 - name: list_submissions
   description: List activity/form submissions by form template ID or activity ID.
@@ -70,3 +68,9 @@ tools:
 - name: bulk_assign_general_attributes
   description: Manage general-attribute assignments to locations in bulk.
   source_operation: https://developer.zenput.com/reference/bulk-assign-general-attributes
+deployment:
+  mode: none
+  verified: derived
+  tools: 19
+  checked: '2026-08-12'
+  source: catalog MCP census
