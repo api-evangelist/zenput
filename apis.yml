@@ -94,6 +94,11 @@ apis:
   - type: LLMsTxt
     url: llms/zenput-llms.txt
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/crunchtime/
+  name: Crunchtime
+  x-relationship: acquired
+  x-evidence: "Zenput was acquired by Crunchtime in 2022 and continues to operate its developer platform under the Zenput brand."
 - type: DomainSecurity
   url: security/zenput-domain-security.yml
 - type: DeveloperPortal
