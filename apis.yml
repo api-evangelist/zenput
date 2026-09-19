@@ -83,6 +83,11 @@ apis:
   tags:
   - Operations Execution
   - Submissions
+  - Location
+  - Restaurant Operations
+  tags_raw:
+  - Operations Execution
+  - Submissions
   - Locations
   - Restaurant Operations
   properties:
